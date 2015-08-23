@@ -1,0 +1,29 @@
+{
+  "name": "sense-extension-utils",
+  "version": "0.1.0",
+  "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
+  "main": "-",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stefanwalther/sense-extension-utils.git"
+  },
+  "keywords": [
+    "qlik-sense",
+    "sense",
+    "visualization-extensions",
+    "utils",
+    "javascript"
+  ],
+  "author": "Stefan Walther",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanwalther/sense-extension-utils/issues"
+  },
+  "homepage": "https://github.com/stefanwalther/sense-extension-utils"
+}
