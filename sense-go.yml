@@ -1,4 +1,4 @@
-packageName: ""
+packageName: "sense-extension-utils"
 wbfolder:
   enabled: false  # Doesn't make much sense to have this enabled in Qlik Dev Hub
 npm:

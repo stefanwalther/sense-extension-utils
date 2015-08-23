@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/stefanwalther/sense-extension-utils",
   "devDependencies": {
+    "gulp": "git://github.com/gulpjs/gulp#4.0",
     "sense-go": "^0.5.10"
   }
 }
