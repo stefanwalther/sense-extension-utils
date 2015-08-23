@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/stefanwalther/sense-extension-utils/issues"
   },
-  "homepage": "https://github.com/stefanwalther/sense-extension-utils"
+  "homepage": "https://github.com/stefanwalther/sense-extension-utils",
+  "devDependencies": {
+    "sense-go": "^0.5.10"
+  }
 }

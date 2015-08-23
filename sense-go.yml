@@ -1,0 +1,6 @@
+packageName: ""
+wbfolder:
+  enabled: false  # Doesn't make much sense to have this enabled in Qlik Dev Hub
+npm:
+  publish: false  # Should be false until published
+buildReleaseDir: './dist'
