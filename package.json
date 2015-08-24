@@ -1,9 +1,11 @@
 {
   "name": "sense-extension-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE.md"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

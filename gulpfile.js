@@ -14,6 +14,7 @@ senseGo.init( gulp, userConfig,  function (  ) {
 		'replace:tmp',
 		'jsonlint:tmp',
 		'htmlmin:tmp',
+		//'uglify:tmp',
 		'clean:buildRelease',
 		'copy:tmpToRelease',
 		'clean:tmp'

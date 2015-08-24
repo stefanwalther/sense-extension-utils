@@ -1,6 +1,7 @@
-packageName: "sense-extension-utils"
+packageName: "sense-extension-utils"	# Still needs to be solved in sense-go that this is not mandatory, doesn't make sense
+										# in a library like this
 wbfolder:
-  enabled: false  # Doesn't make much sense to have this enabled in Qlik Dev Hub
+  enabled: false  						# Doesn't make much sense to have this enabled in Qlik Dev Hub
 npm:
-  publish: false  # Should be false until published
+  publish: false  						# Should be false until published
 buildReleaseDir: './dist'
