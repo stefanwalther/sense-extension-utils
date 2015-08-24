@@ -1,7 +1,9 @@
 /*global define*/
 define( [
-	'jquery'
-], function ( $ ) {
+	'jquery',
+	'underscore'
+], function ( $,
+			  _ ) {
 	'use strict';
 
 	/**
@@ -42,8 +44,8 @@ define( [
 		}
 	}
 
-	function getExtensionPath ( extensionUnqiqueName ) {
-		return window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/sense" ) + 1 ) + 'extensions/' + extensionUnqiqueName;
+	function getExtensionPath ( extensionUniqueName ) {
+		return window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/sense" ) + 1 ) + 'extensions/' + extensionUniqueName;
 	}
 
 	return {
