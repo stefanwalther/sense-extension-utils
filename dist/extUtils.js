@@ -90,6 +90,14 @@ define( [
 		return defer.promise;
 	}
 
+	//Borrowed from underscore.string: https://github.com/epeli/underscore.string/blob/master/startsWith.js
+	function startsWith(str, starts, position) {
+		str = str.split(''); //makeString
+		starts = '' + starts;
+		position = position == null ? 0 : Math.min(toPositive(position), str.length);
+		return str.lastIndexOf(starts, position) === position;
+	}
+
 	return {
 		addStyleToHeader: addStyleToHeader,
 		addStyleLinkToHeader: addStyleLinkToHeader,
