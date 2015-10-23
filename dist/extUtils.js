@@ -97,6 +97,9 @@ define( [
 		position = position == null ? 0 : Math.min(toPositive(position), str.length);
 		return str.lastIndexOf(starts, position) === position;
 	}
+	function toPositive(number) {
+		return number < 0 ? 0 : (+number || 0);
+	}
 
 	return {
 		addStyleToHeader: addStyleToHeader,
