@@ -1,9 +1,10 @@
 {
   "name": "sense-extension-utils",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
   "files": [
     "dist",
+    "CHANGELOG.yml",
     "README.md",
     "LICENSE.md"
   ],
