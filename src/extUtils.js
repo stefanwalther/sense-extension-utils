@@ -112,6 +112,7 @@ define( [
 		addStyleLinkToHeader: addStyleLinkToHeader,
 		getExtensionInfo: getExtensionInfo,
 		getExtensionPath: getExtensionPath,
-		getProductVersion: getProductVersion
+		getProductVersion: getProductVersion,
+		getBasePath: getBasePath
 	}
 } );
