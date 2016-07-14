@@ -1,0 +1,15 @@
+npm:
+  publish: false  						# Should be false until published
+buildReleaseDir: './dist'
+taskChains:
+  - "build:lib":
+    - "clean:tmp"
+    - "copy:toTmp"
+    - "replace:tmp"
+    - "uglify:tmp"
+    - "clean:tmpIllegal"
+    - "clean:buildRelease"
+    - "copy:tmpToRelease"
+    - "clean:localExtensionDir"
+    - "deploy:toLocal"
+    - "clean:tmp"

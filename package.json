@@ -2,34 +2,33 @@
   "name": "sense-extension-utils",
   "version": "0.3.1",
   "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
+  "keywords": [
+    "javascript",
+    "qlik-sense",
+    "sense",
+    "utils",
+    "visualization-extensions"
+  ],
+  "homepage": "https://github.com/stefanwalther/sense-extension-utils",
+  "bugs": {
+    "url": "https://github.com/stefanwalther/sense-extension-utils/issues"
+  },
+  "license": "MIT",
+  "author": "Stefan Walther",
   "files": [
     "dist",
     "CHANGELOG.yml",
     "README.md",
     "LICENSE.md"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stefanwalther/sense-extension-utils.git"
   },
-  "keywords": [
-    "qlik-sense",
-    "sense",
-    "visualization-extensions",
-    "utils",
-    "javascript"
-  ],
-  "author": "Stefan Walther",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stefanwalther/sense-extension-utils/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sense-go build:lib",
+    "release": "sense-go build:lib"
   },
-  "homepage": "https://github.com/stefanwalther/sense-extension-utils",
-  "devDependencies": {
-    "gulp": "git://github.com/gulpjs/gulp#4.0",
-    "sense-go": "^0.5.10"
-  }
+  "devDependencies": {}
 }
