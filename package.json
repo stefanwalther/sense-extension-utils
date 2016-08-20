@@ -1,6 +1,6 @@
 {
   "name": "sense-extension-utils",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
   "keywords": [
     "javascript",
@@ -14,7 +14,7 @@
     "url": "https://github.com/stefanwalther/sense-extension-utils/issues"
   },
   "license": "MIT",
-  "author": "Stefan Walther",
+  "author": "Stefan Walther (https://github.com/stefanwalther)",
   "files": [
     "dist",
     "CHANGELOG.yml",
@@ -26,9 +26,40 @@
     "url": "https://github.com/stefanwalther/sense-extension-utils.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sense-go build:lib",
-    "release": "sense-go build:lib"
+    "release": "sense-go build:lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "chai": "^3.5.0",
+    "gulp-format-md": "^0.1.10",
+    "mocha": "^3.0.1",
+    "requirejs": "^2.2.0",
+    "verb-generate-readme": "^0.1.28"
+  },
+  "verb": {
+    "run": true,
+    "toc": {
+      "render": true,
+      "method": "preWrite",
+      "maxdepth": 3,
+      "footer": " "
+    },
+    "twitter": "waltherstefan",
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": []
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
+  }
 }
