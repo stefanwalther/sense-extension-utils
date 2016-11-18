@@ -4,6 +4,7 @@ v0.4.0:
     - "Add pp-helper"
     - "Add general-utils"
     - "Add variable-utils"
+    - "Remove extUtils"
 v0.3.0:
   date: "2015-11-02"
   enhancements:

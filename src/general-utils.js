@@ -1,22 +1,23 @@
 /*global define*/
 define( [
+	'qlik',
 	'jquery',
-	'underscore',
-	'ng!$http',
-	'ng!$q',
-	'qlik'
-], function ( $,
-			  _,
-			  $http,
-			  $q,
-			  qlik ) {
+	'underscore'
+], function ( qlik, $, _ ) {
 	'use strict';
+
+	var $injector = angular.injector( ['ng'] );
+	var $q = $injector.get( "$q" );
+	var $http = $injector.get( "$http" );
 
 	/**
 	 * Add as style link to the document's header
-	 * @param {String} linkUrl Url to the CSS file
-	 * @param {String}  id If an id is passed, the function will check if this style link has already been added or not.
-	 * If yes, it will not be added again.
+	 *
+	 * @param {string} `linkUrl` - The Url to the CSS file.
+	 * @param {string?}  `id` - If an id is passed, it will be checked if this style link has already been added.
+	 * If this is the case, it will not be added again.
+	 *
+	 * @api public
 	 */
 	function addStyleLinkToHeader ( linkUrl, id ) {
 		if ( id && !_.isEmpty( id ) ) {
@@ -65,8 +66,8 @@ define( [
 			.then( function ( response ) {
 				defer.resolve( response.data );
 			} ).catch( function ( err ) {
-				defer.reject( err );
-			} );
+			defer.reject( err );
+		} );
 
 		return defer.promise;
 	}
@@ -97,16 +98,25 @@ define( [
 		return defer.promise;
 	}
 
-	if(typeof String.prototype.startsWith != 'function'){
-		String.prototype.startsWith = function(str){
-			if(str == null) return false;
+	if ( typeof String.prototype.startsWith != 'function' ) {
+		String.prototype.startsWith = function ( str ) {
+			if ( str == null ) {
+				return false;
+			}
 			var i = str.length;
-			if(this.length < i) return false;
-			for(--i; (i >= 0) && (this[i] === str[i]); --i) continue;
+			if ( this.length < i ) {
+				return false;
+			}
+			for ( --i; (i >= 0) && (this[i] === str[i]); --i ) {
+
+			}
 			return i < 0;
 		}
 	}
 
+	/**
+	 * @api public
+	 */
 	return {
 		addStyleToHeader: addStyleToHeader,
 		addStyleLinkToHeader: addStyleLinkToHeader,

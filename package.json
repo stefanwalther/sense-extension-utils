@@ -44,7 +44,7 @@
       "render": true,
       "method": "preWrite",
       "maxdepth": 3,
-      "footer": " "
+      "footer": "&nbsp;"
     },
     "twitter": "waltherstefan",
     "layout": "empty",
