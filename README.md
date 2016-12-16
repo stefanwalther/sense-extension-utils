@@ -1,5 +1,8 @@
 # sense-extension-utils
 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3c2eda30ad6f4ae0abfa43086cffd52a)](https://www.codacy.com/app/stefan-walther/sense-extension-utils?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stefanwalther/sense-extension-utils&amp;utm_campaign=badger)
+
 > Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.
 
 - [About](#about)
