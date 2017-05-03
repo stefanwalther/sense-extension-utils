@@ -1,5 +1,7 @@
 # sense-extension-utils
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/sense-extension-utils.svg)](https://greenkeeper.io/)
+
 > Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.
 
 - [About](#about)
