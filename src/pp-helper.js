@@ -14,7 +14,7 @@ define( [
 	 * Collection of helpers to retrieve data which can be easily used in the property panel
 	 * of visualization extensions.
 	 */
-	var ppHelper = function () {
+	var PPHelper = function () {
 
 		// Todo: probably easier if we added some sorting for the apps
 		this.getAppList = function () {
@@ -56,7 +56,7 @@ define( [
 
 				defer.resolve( items.qFieldList.qItems.map( function ( item ) {
 					return {
-						value: "",
+						value: item.qName,
 						label: item.qName
 					};
 				} ) );
@@ -115,6 +115,6 @@ define( [
 	// ****************************************************************************************
 	// Return Value
 	// ****************************************************************************************
-	return new ppHelper();
+	return new PPHelper();
 
 } );

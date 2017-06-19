@@ -1,6 +1,6 @@
 {
   "name": "sense-extension-utils",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.",
   "keywords": [
     "javascript",
@@ -27,16 +27,15 @@
   },
   "scripts": {
     "build": "sense-go build:lib",
+    "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "release": "sense-go build:lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "angular-mocks": "^1.5.8",
     "chai": "^3.5.0",
-    "gulp-format-md": "^0.1.10",
     "mocha": "^3.0.1",
-    "requirejs": "^2.2.0",
-    "verb-generate-readme": "^0.1.28"
+    "requirejs": "^2.2.0"
   },
   "verb": {
     "run": true,

@@ -1,5 +1,5 @@
 npm:
-  publish: false  						# Should be false until published
+  publish: false  						  # Should be false until published
 wbfolder:
   enabled: false
 buildReleaseDir: './dist'
