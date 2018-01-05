@@ -1,3 +1,9 @@
+v0.4.2:
+  date: "2018-01-05"
+  changes:
+    - "Simplify .gitignore"
+  fixes:
+    - "Use `lik.getGlobal().getAppList` instead of `qlik.getAppList()` in pp-helper.getAppList to fix an issue with `Connection List` error message"
 v0.4.1:
   date: "2017-06-19"
   changes:
