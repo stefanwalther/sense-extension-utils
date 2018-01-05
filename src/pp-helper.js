@@ -20,7 +20,7 @@ define( [
 		this.getAppList = function () {
 			var defer = $q.defer();
 
-			qlik.getAppList( function ( items ) {
+			qlik.getGlobal().getAppList( function ( items ) {
 				defer.resolve( items.map( function ( item ) {
 						return {
 							value: item.qDocId,
@@ -52,7 +52,7 @@ define( [
 			var defer = $q.defer();
 
 			app.getList( "FieldList", function ( items ) {
-				console.log( 'fieldList', items );
+				// console.log( 'fieldList', items );
 
 				defer.resolve( items.qFieldList.qItems.map( function ( item ) {
 					return {
