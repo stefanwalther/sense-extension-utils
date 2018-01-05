@@ -32,9 +32,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "angular-mocks": "^1.5.8",
     "chai": "^3.5.0",
-    "mocha": "^3.0.1",
     "requirejs": "^2.2.0"
   },
   "verb": {
