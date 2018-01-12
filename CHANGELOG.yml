@@ -1,4 +1,12 @@
-v0.4:5:
+v0.5.0:
+  date: "2018-01-12"
+  added:
+    - "feat(pp-helper): add getFirstSheet()"
+    - "feat(pp-helper): add getLastSheet()"
+  changes:
+    - "ci: use dockerized version of sense-go"
+    - "Added headers to generated files"
+v0.4.5:
   date: "2018-01-05"
   changes:
     - "New encoding"

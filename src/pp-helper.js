@@ -87,6 +87,42 @@ define([
       return defer.promise;
     };
 
+    this.getFirstSheet = function() {
+      var defer = $q.defer();
+
+      app.getAppObjectList(function(data) {
+        var sortedData = _.sortBy(data.qAppObjectList.qItems, function (item) {
+          return item.qData.rank;
+        });
+        if (sortedData.length > 0) {
+          return defer.resolve({
+            value: sortedData[0].qInfo.qId,
+            label: sortedData[0].qMeta.title
+          })
+        }
+      });
+
+      return defer.promise;
+    };
+
+    this.getLastSheet = function() {
+      var defer = $q.defer();
+
+      app.getAppObjectList(function(data) {
+        var sortedData = _.sortBy(data.qAppObjectList.qItems, function (item) {
+          return item.qData.rank;
+        });
+        if (sortedData.length > 0) {
+          return defer.resolve({
+            value: sortedData[sortedData.length -1].qInfo.qId,
+            label: sortedData[sortedData.length -1].qMeta.title
+          })
+        }
+      });
+
+      return defer.promise;
+    };
+
     this.getStoryList = function () {
 
       var defer = $q.defer();
