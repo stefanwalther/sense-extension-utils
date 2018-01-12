@@ -1,22 +1,20 @@
-'use strict';
+const config = require('./../requirejs-config');
+const requirejs = require('requirejs');
+const chai = require('chai');
+const expect = chai.expect();
 
-var config = require( './../requirejs-config' );
-var requirejs = require( 'requirejs' );
-var chai = require( 'chai' );
-var expect = chai.expect();
+describe('variable-utils', function () {
 
-describe( 'variable-utils', function () {
+  var VariableUtils = null;
+  beforeEach(function (done) {
+    requirejs(['variable-utils'], function (variableUtils) {
+      VariableUtils = variableUtils;
+      done();
+    })
+  });
 
-	var VariableUtils = null;
-	beforeEach( function ( done ) {
-		requirejs(['variable-utils'], function ( variableUtils ) {
-			VariableUtils = variableUtils;
-			done();
-		})
-	} );
+  it('has a method updateEngineVars', function () {
+    expect(VariableUtils).to.have.a.property('updateEngineVars');
+  })
 
-	it('has a method updateEngineVars', function() {
-		expect( VariableUtils).to.have.a.property('updateEngineVars');
-	})
-
-} );
+});
