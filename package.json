@@ -29,7 +29,7 @@
     "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "release": "docker run --rm -v ${PWD}:/opt/sense-go stefanwalther/sense-go build:lib",
     "x-pretest": "npm run test:setup-webdriver",
-    "test:unit": "echo $CHROME_PATH && ./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js",
+    "test:unit": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js",
     "test:setup-webdriver": "node_modules/.bin/webdriver-manager update --standalone false --gecko false"
   },
   "devDependencies": {
@@ -39,10 +39,8 @@
     "babel-core": "^6.26.0",
     "babel-plugin-istanbul": "^4.1.5",
     "jquery": "^3.3.0",
-    "protractor": "^5.2.2",
     "requirejs": "^2.3.5",
-    "underscore": "^1.8.3",
-    "webdriver-manager": "^12.0.6"
+    "underscore": "^1.8.3"
   },
   "verb": {
     "run": true,
