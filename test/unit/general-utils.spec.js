@@ -13,5 +13,10 @@ define(['chai', './../../src/general-utils'], function (chai, generalUtils) {
       expect(generalUtils).to.have.a.property('getProductVersion').to.be.a('function');
       expect(generalUtils).to.have.a.property('getBasePath').to.be.a('function');
     });
+
+    it('dummy', function () {
+      let a = generalUtils.dummy();
+      expect(a).to.be.equal(1);
+    });
   });
 });

@@ -30,6 +30,7 @@
     "release": "docker run --rm -v ${PWD}:/opt/sense-go stefanwalther/sense-go build:lib",
     "x-pretest": "npm run test:setup-webdriver",
     "test:unit": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js",
+    "test:unit:coverage": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js --coverage",
     "test:setup-webdriver": "node_modules/.bin/webdriver-manager update --standalone false --gecko false"
   },
   "devDependencies": {
