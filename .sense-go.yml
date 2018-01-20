@@ -11,7 +11,7 @@ taskChains:
     - "uglify:tmp"
     - "clean:tmpIllegal"
     - "clean:buildRelease"
-    - "header-js:tmp"
+    #- "header-js:tmp"
     - "copy:tmpToRelease"
     - "clean:localExtensionDir"
     - "deploy:toLocal"
