@@ -2,7 +2,7 @@
 
 * sense-extension-utils - Sugar methods on top of Qlik Sense' Capability APIs to be used in visualization extensions and mashups.
 * --
-* @version v0.5.4
+* @version v0.5.5
 * @link https://github.com/stefanwalther/sense-extension-utils
 * @author Stefan Walther (https://github.com/stefanwalther)
 * @license MIT
