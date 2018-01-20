@@ -1,3 +1,8 @@
+v0.5.5:
+  date: "2018-01-19"
+  fixes:
+    - "Change return values of getLastSheet()"
+    - "Change return values of getFirstSheet()"
 v0.5.0:
   date: "2018-01-12"
   added:
