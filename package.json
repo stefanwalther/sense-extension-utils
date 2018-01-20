@@ -28,15 +28,20 @@
   "scripts": {
     "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "release": "docker run --rm -v ${PWD}:/opt/sense-go stefanwalther/sense-go build:lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "x-pretest": "npm run test:setup-webdriver",
+    "test:unit": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js",
+    "test:unit:coverage": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js --coverage",
+    "test:setup-webdriver": "node_modules/.bin/webdriver-manager update --standalone false --gecko false"
   },
   "devDependencies": {
-    "angular": "^1.6.8",
-    "angular-mocks": "^1.6.8",
-    "chai": "^3.5.0",
-    "jsdom": "^11.5.1",
-    "mocha": "^4.1.0",
-    "requirejs": "^2.3.5"
+    "after-work.js": "^4.0.1",
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "babel-core": "^6.26.0",
+    "babel-plugin-istanbul": "^4.1.5",
+    "jquery": "^3.3.0",
+    "requirejs": "^2.3.5",
+    "underscore": "^1.8.3"
   },
   "verb": {
     "run": true,
@@ -61,5 +66,8 @@
       "verb",
       "verb-generate-readme"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }

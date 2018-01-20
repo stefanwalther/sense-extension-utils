@@ -1,14 +1,19 @@
 /*global define*/
 define([
+  'angular',
   'qlik',
   'jquery',
   'underscore'
-], function (qlik, $, _) {
+], function (angular, qlik, $, _) {
   'use strict';
 
   var $injector = angular.injector(['ng']);
   var $q = $injector.get("$q");
   var $http = $injector.get("$http");
+
+  function dummy() {
+    return 1;
+  }
 
   /**
    * Add as style link to the document's header
@@ -123,6 +128,7 @@ define([
     getExtensionInfo: getExtensionInfo,
     getExtensionPath: getExtensionPath,
     getProductVersion: getProductVersion,
-    getBasePath: getBasePath
+    getBasePath: getBasePath,
+    dummy: dummy
   }
 });
