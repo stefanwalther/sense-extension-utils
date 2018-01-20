@@ -23,5 +23,5 @@ jobs:
       - run:
           name: Coverage
           command: |
-            npm run test:coverage
+            npm run test:unit:coverage
             bash <(curl -s https://codecov.io/bash)
