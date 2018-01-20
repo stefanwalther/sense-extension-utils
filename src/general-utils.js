@@ -1,9 +1,10 @@
 /*global define*/
 define([
+  'angular',
   'qlik',
   'jquery',
   'underscore'
-], function (qlik, $, _) {
+], function (angular, qlik, $, _) {
   'use strict';
 
   var $injector = angular.injector(['ng']);
