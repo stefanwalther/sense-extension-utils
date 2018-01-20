@@ -1,3 +1,7 @@
+v0.5.6:
+  date: "2018-01-20"
+  fixes:
+    - "Re-run build without header for now"
 v0.5.5:
   date: "2018-01-19"
   fixes:

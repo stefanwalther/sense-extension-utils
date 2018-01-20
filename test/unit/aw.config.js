@@ -5,6 +5,6 @@ module.exports = {
   glob: ['test/unit/*.spec.js'],
   watchGlob: ['src/*.js'],
   'instrument.exclude': [
-    '**/*main.js',
-  ],
+    '**/*main.js'
+  ]
 };
