@@ -96,8 +96,8 @@ define([
         });
         if (sortedData.length > 0) {
           return defer.resolve({
-            value: sortedData[0].qInfo.qId,
-            label: sortedData[0].qMeta.title
+            id: sortedData[0].qInfo.qId,
+            title: sortedData[0].qMeta.title
           })
         }
       });
@@ -114,8 +114,8 @@ define([
         });
         if (sortedData.length > 0) {
           return defer.resolve({
-            value: sortedData[sortedData.length -1].qInfo.qId,
-            label: sortedData[sortedData.length -1].qMeta.title
+            id: sortedData[sortedData.length -1].qInfo.qId,
+            title: sortedData[sortedData.length -1].qMeta.title
           })
         }
       });
