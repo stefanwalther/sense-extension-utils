@@ -8,6 +8,7 @@ requirejs.config({
     underscore: '../../node_modules/underscore/underscore',
     jquery: '../../node_modules/jquery/dist/jquery',
     qlik: './stubs/qlik.stub',
+    lodash: '../../node_modules/lodash/lodash'
     //ng: './stubs/injector-require-plugin.stub'
   },
   shim: {
@@ -18,6 +19,10 @@ requirejs.config({
     underscore: {
       exports: '_'
     },
+    // lodash: {
+    //   deps: ['lodash'],
+    //   exports: '__'
+    // },
     qlik: {
       deps: ['angular']
     },

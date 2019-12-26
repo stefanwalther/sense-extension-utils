@@ -2,7 +2,7 @@
 'use strict';
 
 define(['chai', './../../src/variable-utils'], function (chai, variableUtils) {
-  var expect = chai.expect;
+  const expect = chai.expect;
   describe('general-utils', function () {
     it('should expose functions', function () {
       expect(variableUtils).to.have.a.property('updateEngineVars').to.be.a('function');

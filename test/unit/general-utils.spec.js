@@ -1,8 +1,7 @@
 /* global describe, it */
-'use strict';
 
 define(['chai', './../../src/general-utils'], function (chai, generalUtils) {
-  var expect = chai.expect;
+  const expect = chai.expect;
   describe('general-utils', function () {
     it('should expose functions', function () {
       expect(generalUtils).to.have.a.property('addStyleToHeader').to.be.a('function');

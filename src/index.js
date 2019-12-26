@@ -4,8 +4,9 @@ define([
   'underscore',
   './general-utils',
   './pp-helper',
-  './variable-utils'
-], function (qlik, $, _, generalUtils, ppHelper, varUtils) {
+  './variable-utils',
+  './v1'
+], function (qlik, $, _, generalUtils, ppHelper, varUtils, v1) {
 
   return {
     addStyleToHeader: generalUtils.addStyleToHeader,
@@ -28,7 +29,11 @@ define([
     createEngineSessionVar: varUtils.createEngineSessionVar,
     engineVarExists: varUtils.engineVarExists,
     getEngineVarListValues: varUtils.getEngineVarListValues,
-    getEngineVarValue: varUtils.getEngineVarValue
+    getEngineVarValue: varUtils.getEngineVarValue,
+
+    // v1: {
+    //   getAppList: v1.getAppList
+    // }
 
   }
 

@@ -28,7 +28,14 @@
   "scripts": {
     "docs": "docker run --rm -v ${PWD}:/opt/verb stefanwalther/verb",
     "release": "docker run --rm -v ${PWD}:/opt/sense-go stefanwalther/sense-go build:lib",
+    "lint": "npm run lint:src && npm run lint:test",
+    "lint:fix": "npm run lint:src:fix && npm run lint:test:fix",
+    "lint:src": "eslint src",
+    "lint:src:fix": "eslint src --fix",
+    "lint:test": "eslint test",
+    "lint:test:fix": "eslint test --fix",
     "x-pretest": "npm run test:setup-webdriver",
+    "test": "npm run test:unit",
     "test:unit": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js",
     "test:unit:coverage": "./node_modules/.bin/aw chrome --url test/unit/index.html --glob test/unit/*.spec.js --coverage",
     "test:setup-webdriver": "node_modules/.bin/webdriver-manager update --standalone false --gecko false"
@@ -39,9 +46,15 @@
     "angular-mocks": "^1.5.8",
     "babel-core": "^6.26.0",
     "babel-plugin-istanbul": "^4.1.5",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "enigma.js": "^2.2.1",
     "jquery": "^3.3.0",
+    "lodash": "^4.17.4",
+    "mocha": "^5.2.0",
     "requirejs": "^2.3.5",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "ws": "^6.0.0"
   },
   "verb": {
     "run": true,
@@ -67,7 +80,5 @@
       "verb-generate-readme"
     ]
   },
-  "dependencies": {
-    "lodash": "^4.17.4"
-  }
+  "dependencies": {}
 }

@@ -5,7 +5,6 @@ define([
   'jquery',
   'underscore'
 ], function (angular, qlik, $, _) {
-  'use strict';
 
   var $injector = angular.injector(['ng']);
   var $q = $injector.get("$q");
